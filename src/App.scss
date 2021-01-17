@@ -1,0 +1,490 @@
+$blackish: rgb(15, 25, 35);
+$whiteish: rgb(245, 247, 249);
+
+$darkpurple: #a01e78;
+$purple: #8c82a0;
+$purplewcag: #73739b;
+$pink: #dc82aa;
+$red: #e60014;
+$green: #008a20;
+$yellow: #ffba00;
+
+$break-s: 599px;
+$break-m: 899px;
+$break-l: 1199px;
+$break-xl: 1440px;
+
+$transition: all 300ms;
+$border-radius: 4px;
+
+$darkborder: rgb(50, 60, 70);
+$lightborder: rgb(230, 232, 234);
+$lighterdark-1: rgb(50, 60, 70);
+
+$scheme: dark;
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $whiteish;
+  border-color: $lightborder;
+  font-display: swap;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+  color: $blackish;
+
+  @media (prefers-color-scheme: $scheme) {
+    background-color: $blackish;
+    border-color: $darkborder;
+    color: $whiteish;
+    fill: $whiteish;
+  }
+}
+
+svg {
+  fill: $blackish;
+
+  @media (prefers-color-scheme: $scheme) {
+    fill: $whiteish;
+  }
+}
+
+div {
+  border-color: inherit;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  max-width: 650px;
+}
+
+// Buttons
+
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px 0;
+  > button {
+    margin-right: 20px;
+  }
+}
+
+button {
+  align-items: center;
+  border: 0;
+  border-radius: 100px;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
+  height: 42px;
+  letter-spacing: 0.3px;
+  outline: 0;
+  padding: 0 22px;
+  transition: $transition;
+  > svg {
+    margin-right: 13px;
+    margin-left: -4px;
+  }
+  &.primary {
+    border: 1px solid $darkpurple;
+    background-color: $darkpurple;
+  }
+  &.secondary {
+    border: 1px solid $darkpurple;
+    background-color: rgba($darkpurple, 0);
+    &:hover {
+      background-color: rgba($darkpurple, 0.12);
+    }
+  }
+  &.tertiary {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba($darkpurple, 0);
+    &:hover {
+      background-color: rgba($darkpurple, 0.12);
+    }
+  }
+  &.right {
+    margin-left: auto;
+  }
+}
+
+// Dashboard
+
+.counter {
+  > .number {
+    font-weight: 500;
+    margin-right: 7px;
+  }
+  > .unit {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+}
+
+// Coloring
+
+.red-text {
+  color: #dc82aa;
+}
+
+.translucent {
+  opacity: 0.7;
+}
+
+// Icons
+
+.icon {
+  stroke: $whiteish;
+}
+
+// Boxes
+
+.box {
+  background-color: $whiteish;
+  border-color: $lightborder;
+  color: $blackish;
+  fill: $blackish;
+
+  @media (prefers-color-scheme: $scheme) {
+    background-color: $blackish;
+    border-color: $darkborder;
+    color: $whiteish;
+    fill: $whiteish;
+  }
+}
+
+.box-title {
+  align-self: center;
+  padding: 12px 20px 14px 20px;
+}
+
+.box-button {
+  align-items: center;
+  align-self: center;
+  border-radius: 50%;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  margin: 0 20px;
+  width: 48px;
+  > svg {
+    fill: $darkpurple;
+  }
+  &:hover {
+    background-color: rgba($darkpurple, 0.12);
+  }
+}
+
+.aside-toggle {
+  display: flex;
+  @media (min-width: $break-l) {
+    display: none;
+  }
+}
+
+.app {
+  background-color: inherit;
+  border-color: inherit;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+  max-width: 100%;
+  width: $break-xl;
+  @media (min-width: $break-m) {
+    max-width: 95%;
+  }
+}
+
+header {
+  background-color: $whiteish;
+  border-color: $lightborder;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: $blackish;
+  fill: $blackish;
+  flex: 0 0 auto;
+  height: 58px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  > .logo {
+    display: none;
+    margin: 3vh 0;
+  }
+  @media (prefers-color-scheme: $scheme) {
+    background-color: $blackish;
+    border-color: $darkborder;
+    color: $whiteish;
+    fill: $whiteish;
+  }
+  @media (min-width: $break-m) {
+    border: 0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    > .logo {
+      display: block;
+    }
+  }
+}
+
+.main-nav {
+  display: flex;
+  flex-flow: row wrap;
+  > a {
+    background-color: inherit;
+    border-radius: $border-radius;
+    color: inherit;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    flex: 1 1 auto;
+    margin-right: 0;
+    min-height: 60px;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: $transition;
+    > svg {
+      transition: $transition;
+    }
+    > span {
+      margin-left: 20px;
+      display: none;
+    }
+    &:hover {
+      background-color: rgba($darkpurple, 0.12);
+      > svg {
+        transition: $transition;
+      }
+    }
+    &.active {
+      color: $darkpurple;
+      > svg {
+        fill: $darkpurple;
+      }
+    }
+    @media (min-width: $break-m) {
+      margin-right: 20px;
+      > span {
+        display: block;
+      }
+    }
+  }
+  @media (min-width: $break-m) {
+    flex-flow: column wrap;
+  }
+}
+
+.tab-nav {
+  border-color: inherit;
+  border-bottom-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-flow: row nowrap;
+  position: sticky;
+  top: 64px;
+  > a {
+    background-color: rgba($darkpurple, 0);
+    border-bottom: 3px solid rgba($darkpurple, 0);
+    color: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding: 15px 30px 12px 30px;
+    text-decoration: none;
+    transition: $transition;
+    &:hover {
+      background-color: rgba($darkpurple, 0.12);
+    }
+    &.active {
+      border-bottom: 3px solid rgba($darkpurple, 1);
+    }
+  }
+}
+
+main {
+  background-color: inherit;
+  border-color: inherit;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: 0;
+  flex: 1 1 auto;
+  min-height: 200vh;
+  padding-bottom: 58px;
+  @media (min-width: $break-m) {
+    flex-flow: column wrap;
+    border-width: 1px;
+  }
+}
+
+aside {
+  background-color: inherit;
+  border-color: inherit;
+  border-right-style: solid;
+  border-width: 1px;
+  display: none;
+  flex: 0 0 370px;
+  > div {
+    position: sticky;
+    top: 0;
+  }
+  @media (min-width: $break-l) {
+    display: block;
+  }
+}
+
+.main-header {
+  align-items: center;
+  border-bottom-style: solid;
+  border-width: 1px;
+  display: flex;
+  height: 64px;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.info-box {
+  border-bottom-style: solid;
+  border-width: 1px;
+  padding: 25px 20px;
+}
+
+.title-box {
+  border-bottom-style: solid;
+  border-width: 1px;
+  display: flex;
+  position: sticky;
+  top: 64px;
+  z-index: 500;
+}
+
+// Failed registrations
+
+.failed-registrations {
+  display: flex;
+  flex-flow: row wrap;
+  position: sticky;
+  top: 64px;
+  > .list {
+    border-color: inherit;
+    border-right-style: solid;
+    border-width: 1px;
+    flex: 0 0 50%;
+    position: relative;
+  }
+  > .item {
+    flex: 0 0 50%;
+    position: sticky;
+    top: 100px;
+  }
+}
+
+// Lists
+
+.list-item {
+  background-color: inherit;
+  border-bottom-style: solid;
+  border-width: 1px;
+  color: inherit;
+}
+
+.list-item-link {
+  align-items: center;
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 14px 0 12px 0;
+  &:hover {
+    background-color: rgba(white, 0.04);
+  }
+}
+
+.list-confidence {
+  flex: 0 0 80px;
+  padding: 0 20px;
+}
+
+.list-date {
+  flex: 0 0 80px;
+  padding: 0 20px;
+}
+
+.list-daterange {
+  flex: 0 0 280px;
+  padding: 0 20px;
+}
+
+.list-id {
+  flex: 0 0 80px;
+  opacity: 0.5;
+  padding: 0 20px;
+}
+
+.list-plate {
+  flex: 0 0 200px;
+  padding: 0 20px;
+}
+
+.list-status {
+  flex: 0 0 100px;
+  padding: 0 20px;
+}
+
+.list-text {
+  flex: 0 0 150px;
+  padding: 0 20px;
+}
+
+.list-title {
+  flex: 0 0 230px;
+  padding: 0 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-time {
+  flex: 0 0 80px;
+  padding: 0 20px;
+}
