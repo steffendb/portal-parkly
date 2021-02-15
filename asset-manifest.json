@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portal-parkly/static/css/main.b05b3d07.chunk.css",
-    "main.js": "/portal-parkly/static/js/main.f0ebca67.chunk.js",
-    "main.js.map": "/portal-parkly/static/js/main.f0ebca67.chunk.js.map",
+    "main.js": "/portal-parkly/static/js/main.cb9a4d3a.chunk.js",
+    "main.js.map": "/portal-parkly/static/js/main.cb9a4d3a.chunk.js.map",
     "runtime-main.js": "/portal-parkly/static/js/runtime-main.d71895d5.js",
     "runtime-main.js.map": "/portal-parkly/static/js/runtime-main.d71895d5.js.map",
     "static/js/2.21d5f1b6.chunk.js": "/portal-parkly/static/js/2.21d5f1b6.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.d71895d5.js",
     "static/js/2.21d5f1b6.chunk.js",
     "static/css/main.b05b3d07.chunk.css",
-    "static/js/main.f0ebca67.chunk.js"
+    "static/js/main.cb9a4d3a.chunk.js"
   ]
 }
