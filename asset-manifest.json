@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/portal-parkly/static/css/main.9428e283.chunk.css",
-    "main.js": "/portal-parkly/static/js/main.84b00a27.chunk.js",
-    "main.js.map": "/portal-parkly/static/js/main.84b00a27.chunk.js.map",
-    "runtime-main.js": "/portal-parkly/static/js/runtime-main.6a7145c3.js",
-    "runtime-main.js.map": "/portal-parkly/static/js/runtime-main.6a7145c3.js.map",
-    "static/js/2.117e33a5.chunk.js": "/portal-parkly/static/js/2.117e33a5.chunk.js",
-    "static/js/2.117e33a5.chunk.js.map": "/portal-parkly/static/js/2.117e33a5.chunk.js.map",
-    "static/js/3.e59a63a0.chunk.js": "/portal-parkly/static/js/3.e59a63a0.chunk.js",
-    "static/js/3.e59a63a0.chunk.js.map": "/portal-parkly/static/js/3.e59a63a0.chunk.js.map",
+    "main.css": "/portal-parkly/static/css/main.b05b3d07.chunk.css",
+    "main.js": "/portal-parkly/static/js/main.f0ebca67.chunk.js",
+    "main.js.map": "/portal-parkly/static/js/main.f0ebca67.chunk.js.map",
+    "runtime-main.js": "/portal-parkly/static/js/runtime-main.d71895d5.js",
+    "runtime-main.js.map": "/portal-parkly/static/js/runtime-main.d71895d5.js.map",
+    "static/js/2.21d5f1b6.chunk.js": "/portal-parkly/static/js/2.21d5f1b6.chunk.js",
+    "static/js/2.21d5f1b6.chunk.js.map": "/portal-parkly/static/js/2.21d5f1b6.chunk.js.map",
+    "static/js/3.90c67a7a.chunk.js": "/portal-parkly/static/js/3.90c67a7a.chunk.js",
+    "static/js/3.90c67a7a.chunk.js.map": "/portal-parkly/static/js/3.90c67a7a.chunk.js.map",
     "index.html": "/portal-parkly/index.html",
-    "static/css/main.9428e283.chunk.css.map": "/portal-parkly/static/css/main.9428e283.chunk.css.map",
-    "static/js/2.117e33a5.chunk.js.LICENSE.txt": "/portal-parkly/static/js/2.117e33a5.chunk.js.LICENSE.txt"
+    "static/css/main.b05b3d07.chunk.css.map": "/portal-parkly/static/css/main.b05b3d07.chunk.css.map",
+    "static/js/2.21d5f1b6.chunk.js.LICENSE.txt": "/portal-parkly/static/js/2.21d5f1b6.chunk.js.LICENSE.txt",
+    "static/media/2.107e4e69.jpg": "/portal-parkly/static/media/2.107e4e69.jpg",
+    "static/media/3.741ba0a4.jpg": "/portal-parkly/static/media/3.741ba0a4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a7145c3.js",
-    "static/js/2.117e33a5.chunk.js",
-    "static/css/main.9428e283.chunk.css",
-    "static/js/main.84b00a27.chunk.js"
+    "static/js/runtime-main.d71895d5.js",
+    "static/js/2.21d5f1b6.chunk.js",
+    "static/css/main.b05b3d07.chunk.css",
+    "static/js/main.f0ebca67.chunk.js"
   ]
 }
